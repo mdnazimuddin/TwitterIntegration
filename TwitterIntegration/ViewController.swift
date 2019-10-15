@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let loginVC = FHSTwitterEngine.shared()?.loginController(completionHandler: { (success) in
             self.login.isHidden = true
             self.logout.isHidden = false
-        }) as? UIViewController
+        })
         self.present(loginVC!, animated: true, completion: nil)
     }
     
