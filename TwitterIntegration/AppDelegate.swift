@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FHSTwitterEngine.shared()?.permanentlySetConsumerKey("0C1KMEGi6Tp1L54q38mE8wqwo", andSecret: "oWxdtYgaKbfVjwPxdKLLpw13jtWR1VfcPuqTsJW5amOSGWfzMC")
         return true
     }
 

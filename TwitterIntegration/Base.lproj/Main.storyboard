@@ -17,9 +17,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-ZB-o1b">
+                                <rect key="frame" x="16" y="258.5" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57558363680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CXd-8B-zgf"/>
+                                </constraints>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mNq-qD-r40"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSh-W4-LQh">
+                                <rect key="frame" x="16" y="313.5" width="343" height="40"/>
+                                <color key="backgroundColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HHb-jE-ZRC"/>
+                                </constraints>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLogutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5TP-Uw-y51"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G6r-ZB-o1b" secondAttribute="trailing" constant="16" id="0mD-F4-KPa"/>
+                            <constraint firstItem="ZSh-W4-LQh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EFK-vA-YWY"/>
+                            <constraint firstItem="ZSh-W4-LQh" firstAttribute="top" secondItem="G6r-ZB-o1b" secondAttribute="bottom" constant="15" id="H5V-nC-ZMB"/>
+                            <constraint firstItem="G6r-ZB-o1b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lg6-lO-46K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZSh-W4-LQh" secondAttribute="trailing" constant="16" id="Wm5-pq-6es"/>
+                            <constraint firstItem="ZSh-W4-LQh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aiW-XU-XiL"/>
+                            <constraint firstItem="G6r-ZB-o1b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cqW-hE-hGg"/>
+                            <constraint firstItem="ZSh-W4-LQh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mzO-Yn-BoF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="login" destination="G6r-ZB-o1b" id="FiD-mq-8HG"/>
+                        <outlet property="logout" destination="ZSh-W4-LQh" id="Zfx-1f-kTh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
